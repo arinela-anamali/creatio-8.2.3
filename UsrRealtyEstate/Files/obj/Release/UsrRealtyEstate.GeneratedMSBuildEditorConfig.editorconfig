@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = UsrRealtyEstate
+build_property.ProjectDir = C:\Creatio\CreatioSite8.2.3\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\UsrRealtyEstate\Files\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 
