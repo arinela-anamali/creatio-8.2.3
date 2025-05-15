@@ -3,8 +3,16 @@
     "UId": "0068a9f6-3ed8-4fc1-bb4f-9e9a3ddfa3fe",
     "Name": "UsrRealtyEstate",
     "Type": 1,
+    "ModifiedOnUtc": "\/Date(1747228513000)\/",
     "Maintainer": "Customer",
     "ProjectPath": "Files/UsrRealtyEstate.csproj",
-    "DependsOn": []
+    "DependsOn": [
+      {
+        "UId": "012e2e14-082b-ac2b-da5a-2fc87bad41d4",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtCore",
+        "Type": 1
+      }
+    ]
   }
 }

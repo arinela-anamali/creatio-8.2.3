@@ -1,0 +1,11 @@
+﻿{
+  "SqlScript": {
+    "UId": "ca60b87e-ed2e-ba8d-4b6d-8ee9f46cff86",
+    "Name": "DeleteBluePostgres",
+    "DBEngineType": 2,
+    "InstallType": 2,
+    "ModifiedOnUtc": "\/Date(1747314147000)\/",
+    "BackwardCompatibilityConfirmed": false,
+    "DependsOn": []
+  }
+}
