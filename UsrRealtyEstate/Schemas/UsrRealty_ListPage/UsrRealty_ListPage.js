@@ -3,6 +3,25 @@ define("UsrRealty_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
 				"operation": "merge",
+				"name": "MenuItem_ImportFromExcel",
+				"values": {
+					"clicked": {
+						"request": "crt.ImportDataRequest",
+						"params": {
+							"entitySchemaName": "UsrRealty"
+						}
+					}
+				}
+			},
+			{
+				"operation": "merge",
+				"name": "FolderTree",
+				"values": {
+					"rootSchemaName": "UsrRealty"
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "DataTable",
 				"values": {
 					"columns": [
@@ -24,27 +43,31 @@ define("UsrRealty_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 							"caption": "#ResourceString(PDS_CreatedBy)#",
 							"dataValueType": 10
 						},
-					]
-				}
-			},
-			{
-				"operation": "merge",
-				"name": "MenuItem_ImportFromExcel",
-				"values": {
-					"clicked": {
-						"request": "crt.ImportDataRequest",
-						"params": {
-							"entitySchemaName": "UsrRealty"
+						{
+							"id": "5a45c3ae-e017-801b-1c06-6f1b1f737b2d",
+							"code": "PDS_UsrAreaSq",
+							"caption": "#ResourceString(PDS_UsrAreaSq)#",
+							"dataValueType": 32
+						},
+						{
+							"id": "2330c2d9-8749-8ac0-c379-d5c6a7667301",
+							"code": "PDS_UsrManager",
+							"caption": "#ResourceString(PDS_UsrManager)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "66ab58f5-346e-7d14-9d05-24af4287c95e",
+							"code": "PDS_UsrOfferType",
+							"caption": "#ResourceString(PDS_UsrOfferType)#",
+							"dataValueType": 10
+						},
+						{
+							"id": "2def3398-428c-17be-3fb0-cd7662b03c35",
+							"code": "PDS_UsrPrice",
+							"caption": "#ResourceString(PDS_UsrPrice)#",
+							"dataValueType": 32
 						}
-					}
-				}
-			},
-			{
-				"operation": "merge",
-				"name": "FolderTree",
-				"values": {
-					"sourceSchemaName": "FolderTree",
-					"rootSchemaName": "UsrRealty"
+					]
 				}
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
@@ -72,6 +95,26 @@ define("UsrRealty_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 						"modelConfig": {
 							"path": "PDS.CreatedBy"
 						}
+					},
+					"PDS_UsrAreaSq": {
+						"modelConfig": {
+							"path": "PDS.UsrAreaSq"
+						}
+					},
+					"PDS_UsrManager": {
+						"modelConfig": {
+							"path": "PDS.UsrManager"
+						}
+					},
+					"PDS_UsrOfferType": {
+						"modelConfig": {
+							"path": "PDS.UsrOfferType"
+						}
+					},
+					"PDS_UsrPrice": {
+						"modelConfig": {
+							"path": "PDS.UsrPrice"
+						}
 					}
 				}
 			}
@@ -85,7 +128,30 @@ define("UsrRealty_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHE
 					"config"
 				],
 				"values": {
-					"entitySchemaName": "UsrRealty"
+					"entitySchemaName": "UsrRealty",
+					"attributes": {
+						"UsrName": {
+							"path": "UsrName"
+						},
+						"CreatedOn": {
+							"path": "CreatedOn"
+						},
+						"CreatedBy": {
+							"path": "CreatedBy"
+						},
+						"UsrAreaSq": {
+							"path": "UsrAreaSq"
+						},
+						"UsrManager": {
+							"path": "UsrManager"
+						},
+						"UsrOfferType": {
+							"path": "UsrOfferType"
+						},
+						"UsrPrice": {
+							"path": "UsrPrice"
+						}
+					}
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
